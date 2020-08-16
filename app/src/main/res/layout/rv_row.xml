@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rvrow"
+    android:padding="6dp">
+
+                <TextView
+                android:id="@+id/rvbookID"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="6dp"
+                android:text="1"
+                android:textColor="#078AD8"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rvbookTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/rvbookID"
+                android:text="Title"
+                android:textColor="#078AD8"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/rvbookID"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rvbookAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rvbookID"
+                android:gravity="center_vertical"
+                android:layout_below="@id/rvbookTitle"
+                android:text="Author"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/rvbookTitle"
+                app:layout_constraintTop_toBottomOf="@+id/rvbookTitle" />
+
+    <TextView
+        android:id="@+id/rvbookSynopsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rvbookID"
+        android:layout_below="@id/rvbookAuthor"
+        android:gravity="start|top"
+        android:text="Synopsis"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/rvbookAuthor"
+        app:layout_constraintTop_toBottomOf="@+id/rvbookAuthor"/>
+
+
+
+
+</RelativeLayout>

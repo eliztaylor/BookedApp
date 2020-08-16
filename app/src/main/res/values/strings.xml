@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Booked App</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY" tools:ignore="ExtraTranslation">euqogb6UHX5TEPe84pkH7WF4v</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET" tools:ignore="ExtraTranslation">8NcC676hHbuX59EK2TXDZVMHUVHlFpX3oWIZjrtZosvjuB3EHS</string>
+
+</resources>

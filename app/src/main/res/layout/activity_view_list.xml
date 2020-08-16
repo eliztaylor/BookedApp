@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ViewListActivity">
+
+    <!--<ListView
+        android:id="@+id/lv_bookList"
+        android:layout_width="395dp"
+        android:layout_height="532dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titles"
+        app:layout_constraintVertical_bias="0.166" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_bookList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginTop="165dp"
+        android:layout_marginLeft="8dp"/>
+
+    <ImageView
+        android:id="@+id/iv_bookedLogo"
+        android:layout_width="204dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginLeft="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bookedlogo" />
+
+    <TextView
+        android:id="@+id/tv_titles"
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+
+        android:layout_marginTop="140dp"
+        android:gravity="center"
+        android:text="Titles in Your Booked Library"
+        android:textColor="#078AD8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_bookedLogo" />
+
+
+</RelativeLayout>
